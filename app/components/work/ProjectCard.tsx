@@ -14,7 +14,6 @@ const ProjectCard = ({
     description,
     technologies,
     techNames,
-   // techLinks,
     github,
     demo,
     image,
