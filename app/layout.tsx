@@ -1,13 +1,15 @@
-import "./globals.css";
-import React, { ReactNode } from "react";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+/* eslint-disable no-use-before-define */
+
+import "./globals.css"
+import React, { ReactNode } from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
 
 const syne = Inter({
-    subsets: ["latin"],
-    display: "block",
-    weight: ["400", "500", "600", "700", "800"],
-});
+  subsets: ["latin"],
+  display: "block",
+  weight: ["400", "500", "600", "700", "800"],
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.example.com/"),
@@ -75,17 +77,17 @@ export const metadata: Metadata = {
 }
 
 type RootLayoutProps = {
-  children: ReactNode;
-};
+  children: ReactNode
+}
 
 export default function RootLayout({ children }: RootLayoutProps) {
-    return (
-        <html lang="en">
-            <body
-                className={`${syne.className} scroll-smooth scrollbar-none scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
-            >
-                {children}
-            </body>
-        </html>
-    );
+  return (
+    <html lang="en">
+      <body
+        className={`${syne.className} scroll-smooth scrollbar-none scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
+      >
+        {children}
+      </body>
+    </html>
+  )
 }

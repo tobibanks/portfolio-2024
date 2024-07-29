@@ -1,3 +1,5 @@
+/* eslint-disable no-use-before-define */
+
 import Link from "next/link";
 import { motion } from "framer-motion";
 import AnimatedBody from "../animations/AnimatedBody";

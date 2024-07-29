@@ -1,3 +1,5 @@
+/* eslint-disable no-use-before-define */
+
 import { inter } from "../fonts/inter";
 import { motion } from "framer-motion";
 import HeroBackground from "../components/background/HeroBackground";
