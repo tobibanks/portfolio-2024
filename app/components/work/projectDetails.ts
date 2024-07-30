@@ -88,7 +88,7 @@ export const projects = [
         techNames: ["Tailwind", "React"],
         github: "",
         demo: "#",
-        image: "/projects/deliciousness.png",
+        image: "/projects/deliciousness.jpeg",
         available: true,
     },
                 {
