@@ -103,4 +103,40 @@ export const projects = [
         image: "/projects/pizza-store.png",
         available: true,
     },
+            {
+        id: 6,
+        name: "Loop Studios",
+        description:
+            "Developed a landing page for Loop Studios",
+        technologies: [SiTailwindcss, SiReact],
+        techNames: ["Tailwind", "React"],
+        github: "",
+        demo: "https://loopstudios-tobibanks.vercel.app/",
+        image: "/projects/loopstudios.png",
+        available: true,
+    },
+                    {
+        id: 7,
+        name: "Shortly",
+        description:
+            "Developed a landing page for SHORTLY",
+        technologies: [SiTailwindcss, SiReact],
+        techNames: ["Tailwind", "React"],
+        github: "",
+        demo: "https://shortly-inky.vercel.app/",
+        image: "/projects/shortly.png",
+        available: true,
+    },
+                            {
+        id: 8,
+        name: "SendIt",
+        description:
+            "Developed a landing page for SENDIT",
+        technologies: [SiTailwindcss, SiReact],
+        techNames: ["Tailwind", "React"],
+        github: "",
+        demo: "https://sendit-website-tailwind.vercel.app/",
+        image: "/projects/sendit.png",
+        available: true,
+    },
 ];
