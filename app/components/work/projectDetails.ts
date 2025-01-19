@@ -11,9 +11,9 @@ import {
   SiSanity,
   SiAngular,
   SiNodedotjs
-} from "react-icons/si"
-import { TbBrandThreejs } from "react-icons/tb"
-import { IconType } from "react-icons"
+} from "react-icons/si";
+import { TbBrandThreejs } from "react-icons/tb";
+import { IconType } from "react-icons";
 
 export type ProjectProps = {
   id: number
