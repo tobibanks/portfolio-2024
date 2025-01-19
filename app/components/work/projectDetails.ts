@@ -8,7 +8,7 @@ import {
   SiRust,
   SiTailwindcss,
   SiTypescript,
-  SiSanity,
+  SiSanityio,
   SiAngular,
   SiNodedotjs
 } from "react-icons/si"
@@ -55,7 +55,7 @@ export const projects = [
     id: 2,
     name: "YC DIRECTORY",
     description: "A web app used by inventors to pitch their ideas",
-    technologies: [SiTailwindcss, SiReact, SiSanity],
+    technologies: [SiTailwindcss, SiReact, SiSanityio],
     techNames: ["Tailwind", "React", "Sanity"],
     github: "https://github.com/tobibanks/yc-directory",
     demo: "https://yc-directory-tobi.vercel.app/",
