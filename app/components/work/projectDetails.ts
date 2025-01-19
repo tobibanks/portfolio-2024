@@ -150,4 +150,4 @@ export const projects = [
     image: "/projects/sendit.png",
     available: true
   }
-]
+];
