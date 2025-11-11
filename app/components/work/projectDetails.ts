@@ -13,7 +13,7 @@ import {
   SiNodedotjs
 } from "react-icons/si";
 import { TbBrandThreejs } from "react-icons/tb";
-import { IconType } from "react-icons";
+import { IconType } from "react-icons/lib";
 
 export type ProjectProps = {
   id: number
@@ -32,7 +32,7 @@ export const projects = [
   {
     id: 0,
     name: "APPLE IPHONE WEBSITE",
-    description: "remake of the iphone 15 landing page",
+    description: "A pixel-perfect recreation of Apple's iPhone 15 landing page with smooth 3D animations and interactive product showcases. Built to demonstrate advanced frontend skills and attention to detail in replicating premium web experiences.",
     technologies: [SiTailwindcss, SiReact, TbBrandThreejs],
     techNames: ["Tailwind", "React", "GSAP", "THREE.JS"],
     github: "https://github.com/tobibanks/apple-iphone-website",
@@ -43,9 +43,9 @@ export const projects = [
   {
     id: 1,
     name: "SAHARA VIEWPOINT WEBSITE",
-    description: "Developed a landing page for SaharaViewPoint..",
-    technologies: [SiTailwindcss, SiReact],
-    techNames: ["Tailwind", "React"],
+    description: "A clean, professional landing page for SaharaViewPoint that introduces visitors to their services. Focused on intuitive navigation and clear messaging to convert visitors into engaged users.",
+    technologies: [SiTailwindcss, SiAngular],
+    techNames: ["Tailwind", "Angular"],
     github: "",
     demo: "https://saharaviewpoint.com/",
     image: "/projects/sahara.png",
@@ -54,9 +54,9 @@ export const projects = [
   {
     id: 2,
     name: "YC DIRECTORY",
-    description: "A web app used by inventors to pitch their ideas",
-    technologies: [SiTailwindcss, SiReact, SiSanity],
-    techNames: ["Tailwind", "React", "Sanity"],
+    description: "A pitch platform where inventors showcase their ideas to potential investors and collaborators. Integrated with Sanity CMS for easy content management, allowing users to create compelling pitch profiles and discover innovative projects.",
+    technologies: [SiTailwindcss, SiNextdotjs, SiSanity],
+    techNames: ["Tailwind", "Next.js", "Sanity"],
     github: "https://github.com/tobibanks/yc-directory",
     demo: "https://yc-directory-tobi.vercel.app/",
     image: "/projects/sanity.png",
@@ -65,9 +65,9 @@ export const projects = [
   {
     id: 3,
     name: "BANKS THE PLUG",
-    description: "Developed a HUB for Job referrals and recruitment",
+    description: "A job referral and recruitment platform connecting talent with opportunities. Built a full-stack hub that streamlines the hiring process, making it easier for candidates to find positions through trusted referrals and for companies to discover quality talent.",
     technologies: [SiTailwindcss, SiAngular, SiNodedotjs, SiTypescript],
-    techNames: ["Tailwind", "Angular", "NodeJs"],
+    techNames: ["Tailwind", "Angular", "Node.js"],
     github: "",
     demo: "https://bankstheplug.ng/",
     image: "/projects/btp.png",
@@ -76,7 +76,7 @@ export const projects = [
   {
     id: 4,
     name: "Lafarge Admin",
-    description: "Developed an Admin App to manage Logistics Processes",
+    description: "An internal logistics management system that coordinates shipment operations across multiple teams. Designed to reduce bottlenecks and improve visibility into the supply chain, helping Lafarge teams track and manage shipments efficiently from a centralized dashboard.",
     technologies: [SiTailwindcss, SiAngular, SiTypescript],
     techNames: ["Tailwind", "Angular"],
     github: "",
@@ -87,7 +87,7 @@ export const projects = [
   {
     id: 5,
     name: "SaharaViewPoint Client App",
-    description: "Developed a HUB for Client users",
+    description: "A client portal for SaharaViewPoint users to access services and manage their accounts. Built with user experience in mind, providing clients with a seamless, intuitive interface for their daily interactions.",
     technologies: [SiTailwindcss, SiAngular, SiTypescript],
     techNames: ["Tailwind", "Angular"],
     github: "",
@@ -98,7 +98,7 @@ export const projects = [
   {
     id: 6,
     name: "Deliciousness Recipe App",
-    description: "Developed an app to manage recipes",
+    description: "A recipe management application that helps users organize, discover, and save their favorite dishes. Features intuitive browsing and search functionality to make cooking inspiration easily accessible.",
     technologies: [SiTailwindcss, SiReact],
     techNames: ["Tailwind", "React"],
     github: "",
@@ -120,7 +120,7 @@ export const projects = [
   {
     id: 7,
     name: "Loop Studios",
-    description: "Developed a landing page for Loop Studios",
+    description: "A visually striking landing page showcasing Loop Studios' immersive VR experiences. Created a responsive, modern interface that captures attention and effectively communicates the brand's creative vision.",
     technologies: [SiTailwindcss, SiReact],
     techNames: ["Tailwind", "React"],
     github: "",
@@ -131,7 +131,7 @@ export const projects = [
   {
     id: 8,
     name: "Shortly",
-    description: "Developed a landing page for SHORTLY",
+    description: "A URL shortening service landing page with a clean, conversion-focused design. Built to demonstrate modern UI/UX principles and responsive design best practices.",
     technologies: [SiTailwindcss, SiReact],
     techNames: ["Tailwind", "React"],
     github: "",
@@ -142,7 +142,7 @@ export const projects = [
   {
     id: 9,
     name: "SendIt",
-    description: "Developed a landing page for SENDIT",
+    description: "A delivery service landing page featuring bold visuals and clear calls-to-action. Designed to engage visitors and effectively communicate the service's value proposition.",
     technologies: [SiTailwindcss, SiReact],
     techNames: ["Tailwind", "React"],
     github: "",

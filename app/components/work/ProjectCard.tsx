@@ -8,6 +8,8 @@ import Container from "../container/Container";
 import React from "react";
 import {SiGithub} from "react-icons/si";
 import {BsLink45Deg} from "react-icons/bs";
+import { IconType } from "react-icons/lib";
+
 const ProjectCard = ({
     id,
     name,
@@ -104,7 +106,7 @@ const ProjectCard = ({
                         }
                     />
                     <div className="mt-9 mb-9 grid grid-cols-5 gap-5 col-start-1 col-end-2">
-                        {technologies.map((IconComponent, id) => (
+                        {technologies.map((IconComponent: IconType, id: number) => (
                             <div key={id} className={"relative"}>
                                 <Link
                                     href=""
