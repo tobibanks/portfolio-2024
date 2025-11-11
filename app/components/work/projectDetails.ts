@@ -15,6 +15,7 @@ import {
 import { TbBrandThreejs } from "react-icons/tb";
 import { ComponentType } from "react";
 
+
 export type ProjectProps = {
   id: number
   name: string
@@ -28,7 +29,7 @@ export type ProjectProps = {
   available: boolean
 }
 
-export const projects = [
+export const projects: ProjectProps[] = [
   {
     id: 0,
     name: "APPLE IPHONE WEBSITE",
