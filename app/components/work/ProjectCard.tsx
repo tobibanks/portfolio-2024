@@ -8,6 +8,8 @@ import Container from "../container/Container.tsx";
 import React from "react";
 import {SiGithub} from "react-icons/si";
 import {BsLink45Deg} from "react-icons/bs";
+import { IconBaseProps } from "react-icons";
+
 const ProjectCard = ({
     id,
     name,
@@ -63,7 +65,7 @@ const ProjectCard = ({
                                 data-blobity-offset-x="4"
                                 data-blobity-offset-y="4"
                                 data-blobity-magnetic="false">
-                                <SiGithub/>
+                                <SiGithub as="span" />
                             </Link>
                             <Link
                                 href={demo}
@@ -75,7 +77,7 @@ const ProjectCard = ({
                                 data-blobity-offset-x="4"
                                 data-blobity-offset-y="4"
                                 data-blobity-magnetic="false">
-                                <BsLink45Deg/>
+                                <BsLink45Deg as="span" />
                             </Link>
                         </>
                     ) : (
@@ -104,21 +106,24 @@ const ProjectCard = ({
                         }
                     />
                     <div className="mt-9 mb-9 grid grid-cols-5 gap-5 col-start-1 col-end-2">
-                        {technologies.map((IconComponent, id) => (
-                            <div key={id} className={"relative"}>
-                                <Link
-                                    href=""
-                                    target="_blank"
-                                    aria-label={`Learn more about ${techNames[id]}`}
-                                    className="w-[20px] text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
-                                   // title={techLinks[id]}
-                                    //data-blobity-tooltip={techNames[id]}
-                                    data-blobity-magnetic="false"
-                                >
-                                    <IconComponent/>
-                                </Link>
-                            </div>
-                        ))}
+                        {technologies.map((IconComponent, index) => {
+                            const Icon = IconComponent as React.ComponentType<IconBaseProps>;
+                            return (
+                                <div key={index} className={"relative"}>
+                                    <Link
+                                        href=""
+                                        target="_blank"
+                                        aria-label={`Learn more about ${techNames[index]}`}
+                                        className="w-[20px] text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
+                                       // title={techLinks[index]}
+                                        //data-blobity-tooltip={techNames[index]}
+                                        data-blobity-magnetic="false"
+                                    >
+                                        <Icon />
+                                    </Link>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </Container>
