@@ -1,6 +1,9 @@
+// File: ./app/sections/Tools.tsx
+
 /* eslint-disable no-use-before-define */
 
-import React from "react";
+// 1. Import ComponentType from react
+import React, { ComponentType } from "react";
 import "../animations/animate.css";
 import AnimatedBody from "../animations/AnimatedBody";
 import AnimatedTitle from "../animations/AnimatedTitle";
@@ -18,6 +21,23 @@ import {
     SiNodedotjs,
 } from "react-icons/si";
 import AnimatedTools from "../animations/AnimatedTools.tsx";
+
+// 2. Type-cast the imported icons to a safe component type
+// This resolves the Type error
+const TypescriptIcon = SiTypescript as ComponentType<any>;
+const JavascriptIcon = SiJavascript as ComponentType<any>;
+const ReactIcon = SiReact as ComponentType<any>;
+const AngularIcon = SiAngular as ComponentType<any>;
+const NextjsIcon = SiNextdotjs as ComponentType<any>;
+
+const PostgresqlIcon = SiPostgresql as ComponentType<any>;
+const MysqlIcon = SiMysql as ComponentType<any>;
+const MongodbIcon = SiMongodb as ComponentType<any>;
+const NodejsIcon = SiNodedotjs as ComponentType<any>;
+
+const GithubIcon = SiGithub as ComponentType<any>;
+const GitIcon = SiGit as ComponentType<any>;
+
 
 const Tools = () => {
     return (
@@ -45,11 +65,12 @@ const Tools = () => {
                                 stepSize={0.1}
                                 iconSize={50}
                             >
-                                <SiTypescript size={50} />
-                                <SiJavascript size={50} />
-                                <SiReact size={50} />
-                                <SiAngular size={50} />
-                                <SiNextdotjs size={50} />
+                                {/* 3. Use the new type-casted variables */}
+                                <TypescriptIcon size={50} />
+                                <JavascriptIcon size={50} />
+                                <ReactIcon size={50} />
+                                <AngularIcon size={50} />
+                                <NextjsIcon size={50} />
                             </AnimatedTools>
                         </div>
                     </div>
@@ -62,10 +83,11 @@ const Tools = () => {
                                 stepSize={0.1}
                                 iconSize={50}
                             >
-                                <SiPostgresql size={50} />
-                                <SiMysql size={50} />
-                                <SiMongodb size={50} />
-                                <SiNodedotjs size={50} />
+                                {/* 3. Use the new type-casted variables */}
+                                <PostgresqlIcon size={50} />
+                                <MysqlIcon size={50} />
+                                <MongodbIcon size={50} />
+                                <NodejsIcon size={50} />
                             </AnimatedTools>
                         </div>
                     </div>
@@ -78,8 +100,9 @@ const Tools = () => {
                                 stepSize={0.1}
                                 iconSize={50}
                             >
-                                <SiGithub size={50} />
-                                <SiGit size={50} />
+                                {/* 3. Use the new type-casted variables */}
+                                <GithubIcon size={50} />
+                                <GitIcon size={50} />
                             </AnimatedTools>
                         </div>
                     </div>
