@@ -33,7 +33,7 @@ export const projects: ProjectProps[] = [
     id: 0,
     name: "APPLE IPHONE WEBSITE",
     description: "A pixel-perfect recreation of Apple's iPhone 15 landing page with smooth 3D animations and interactive product showcases. Built to demonstrate advanced frontend skills and attention to detail in replicating premium web experiences.",
-    technologies: [SiTailwindcss, SiReact, TbBrandThreejs],
+    technologies: [SiTailwindcss, SiReact, TbBrandThreejs]  as ComponentType[],
     techNames: ["Tailwind", "React", "GSAP", "THREE.JS"],
     github: "https://github.com/tobibanks/apple-iphone-website",
     demo: "https://tobiodogwu-apple-15.vercel.app/",
