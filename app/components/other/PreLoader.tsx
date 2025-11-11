@@ -1,17 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
+//import Logo from "/projects/favicon.ico";
 
 const PreLoader: React.FC = () => {
-    const [isClient, setIsClient] = useState(false);
-
     useEffect(() => {
-        // Ensure we're on the client side
-        setIsClient(true);
-    }, []);
-
-    useEffect(() => {
-        if (!isClient) return; // Don't run on server
-
         const tl = gsap.timeline();
 
         // Preloader Animation
@@ -64,7 +56,7 @@ const PreLoader: React.FC = () => {
         };
 
         const mobileLanding = () => {
-            if (typeof window !== 'undefined' && window.innerWidth < 763) {
+            if (window.innerWidth < 763) {
                 tl.from(".landing__main2", {
                     duration: 1,
                     delay: 0,
@@ -75,21 +67,8 @@ const PreLoader: React.FC = () => {
             }
         };
 
-        // Add a small delay to ensure DOM is ready
-        const timer = setTimeout(() => {
-            preLoaderAnim();
-        }, 100);
-
-        return () => {
-            clearTimeout(timer);
-            tl.kill(); // Clean up timeline
-        };
-    }, [isClient]);
-
-    // Don't render on server side
-    if (!isClient) {
-        return null;
-    }
+        preLoaderAnim();
+    }, []); // Empty dependency array to run the animation only on mount
 
     return (
         <div
@@ -107,7 +86,7 @@ const PreLoader: React.FC = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                overflow: "hidden",
+                overflow: "hidden !important",
             }}
         >
             <div
@@ -118,7 +97,8 @@ const PreLoader: React.FC = () => {
             >
                 <span>Tobi Odogwu</span>
                 <span> / </span>
-                <span className="flex items-center justify-center gap-3">Samuel Odogwu</span>
+               
+                <span className="flex items-center justify-center gap-3">  Samuel Odogwu</span>
                 <div className="sub hidden"></div>
             </div>
         </div>

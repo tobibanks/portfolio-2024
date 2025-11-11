@@ -1,15 +1,13 @@
-import { ProjectProps } from "./projectDetails.ts";
+import { ProjectProps } from "./projectDetails";
 import Link from "next/link";
 import Image from "next/image";
-import AnimatedTitle from "../../animations/AnimatedTitle.tsx";
-import AnimatedBody from "../../animations/AnimatedBody.tsx";
+import AnimatedTitle from "../../animations/AnimatedTitle";
+import AnimatedBody from "../../animations/AnimatedBody";
 import { motion } from "framer-motion";
-import Container from "../container/Container.tsx";
+import Container from "../container/Container";
 import React from "react";
 import {SiGithub} from "react-icons/si";
 import {BsLink45Deg} from "react-icons/bs";
-import { IconBaseProps } from "react-icons";
-
 const ProjectCard = ({
     id,
     name,
@@ -65,7 +63,7 @@ const ProjectCard = ({
                                 data-blobity-offset-x="4"
                                 data-blobity-offset-y="4"
                                 data-blobity-magnetic="false">
-                                <SiGithub as="span" />
+                                <SiGithub/>
                             </Link>
                             <Link
                                 href={demo}
@@ -77,7 +75,7 @@ const ProjectCard = ({
                                 data-blobity-offset-x="4"
                                 data-blobity-offset-y="4"
                                 data-blobity-magnetic="false">
-                                <BsLink45Deg as="span" />
+                                <BsLink45Deg/>
                             </Link>
                         </>
                     ) : (
@@ -102,28 +100,25 @@ const ProjectCard = ({
                     <AnimatedBody
                         text={description}
                         className={
-                            "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-gray-300 "
+                            "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D] "
                         }
                     />
                     <div className="mt-9 mb-9 grid grid-cols-5 gap-5 col-start-1 col-end-2">
-                        {technologies.map((IconComponent, index) => {
-                            const Icon = IconComponent as React.ComponentType<IconBaseProps>;
-                            return (
-                                <div key={index} className={"relative"}>
-                                    <Link
-                                        href=""
-                                        target="_blank"
-                                        aria-label={`Learn more about ${techNames[index]}`}
-                                        className="w-[20px] text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
-                                       // title={techLinks[index]}
-                                        //data-blobity-tooltip={techNames[index]}
-                                        data-blobity-magnetic="false"
-                                    >
-                                        <Icon />
-                                    </Link>
-                                </div>
-                            );
-                        })}
+                        {technologies.map((IconComponent, id) => (
+                            <div key={id} className={"relative"}>
+                                <Link
+                                    href=""
+                                    target="_blank"
+                                    aria-label={`Learn more about ${techNames[id]}`}
+                                    className="w-[20px] text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
+                                   // title={techLinks[id]}
+                                    //data-blobity-tooltip={techNames[id]}
+                                    data-blobity-magnetic="false"
+                                >
+                                    <IconComponent/>
+                                </Link>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </Container>

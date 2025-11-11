@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    
     "allowImportingTsExtensions": true,
     "allowJs": true,
     "esModuleInterop": true,
@@ -10,7 +9,7 @@
     "lib": [
       "esnext"
     ],
-    "module": "nodenext",
+    "module": "esnext",
     "moduleDetection": "force",
     "moduleResolution": "nodenext",
     "noEmit": true,
