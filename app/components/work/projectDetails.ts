@@ -13,13 +13,13 @@ import {
   SiNodedotjs
 } from "react-icons/si";
 import { TbBrandThreejs } from "react-icons/tb";
-import { IconType } from "react-icons/lib";
+import { ComponentType } from "react";
 
 export type ProjectProps = {
   id: number
   name: string
   description: string
-  technologies: IconType[]
+  technologies: ComponentType[]
   techNames: string[]
   //techLinks: string[];
   github: string
