@@ -1,5 +1,5 @@
 import React, {cloneElement} from "react";
-import { IconType } from 'react-icons/lib';  // Changed import path
+import { IconType} from "react-icons/lib";
 import Animated from "./Animated.tsx";
 
 type AnimatedToolsProps = {

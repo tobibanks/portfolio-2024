@@ -13,7 +13,7 @@ import {
   SiNodedotjs
 } from "react-icons/si";
 import { TbBrandThreejs } from "react-icons/tb";
-import { IconType } from "react-icons";
+import { IconType } from "react-icons/lib";
 
 export type ProjectProps = {
   id: number
