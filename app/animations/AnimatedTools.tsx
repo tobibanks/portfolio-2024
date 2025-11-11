@@ -1,12 +1,13 @@
-import React, { cloneElement, ComponentType } from "react"; // <-- MODIFIED
-// import { IconType } from "react-icons/lib"; // <-- REMOVED
+import React, { cloneElement, ComponentType } from "react";
 import Animated from "./Animated"; // Replace with the correct path to the "Animated" component
 
 type AnimatedToolsProps = {
   delay: number;
   stepSize: number;
-  // Use ComponentType instead of IconType
-  children: React.ReactElement<React.ComponentProps<ComponentType>>[]; // <-- MODIFIED
+  // We're passing components that accept a 'size' prop.
+  children: React.ReactElement<
+    React.ComponentProps<ComponentType<{ size?: number | string }>>
+  >[];
   iconSize: number;
   className?: string;
 };
@@ -22,6 +23,7 @@ const AnimatedTools: React.FC<AnimatedToolsProps> = ({
     <div className={className}>
       {children.map((child, index) => (
         <Animated key={index} delay={delay + index * stepSize}>
+          {/* This will no longer error */}
           {cloneElement(child, { size: iconSize })}
         </Animated>
       ))}
