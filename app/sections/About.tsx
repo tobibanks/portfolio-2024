@@ -23,17 +23,22 @@ const About = () => {
 
                 <div className="mx-auto flex w-[100%] flex-col lg:max-w-[1200px] lg:flex-row lg:gap-20">
                     <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-medium  leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16  lg:max-w-[90%] lg:text-[24px] ">
-                        <AnimatedBody text="Hello! I'm Samuel Odogwu, a passionate software developer based in Lagos, Nigeria. I thrive on creating web solutions that tackle user challenges and am always eager to work on new and exciting projects... " />
+                        <AnimatedBody text="Hi, I'm Samuel Odogwu — a software developer in Lagos building web solutions that actually solve problems." />
 
                         <AnimatedBody
                             delay={0.1}
-                            text="I am highly motivated and result-oriented, constantly seeking opportunities to enhance my skills and contribute to innovative projects. I specialize in programming languages such as C#, JavaScript, HTML, and CSS, and have experience with frameworks like React, Angular, and Node.js. My goal is to join a dynamic organization where I can leverage my skills, continue to grow professionally, and make a meaningful impact. I am resourceful, innovative, and flexible, always looking for ways to solve problems effectively."
+                            text="I work with JavaScript, C#, HTML, and CSS, and spend most of my time with React, Angular, and Node.js. What drives me isn't just writing code — it's creating experiences that make people's lives easier."
                         />
 
-                        {/* <AnimatedBody
-                delay={0.2}
-                text="Right now, I’m working on some exciting projects that I can’t wait to share with you. But I’m always open to new opportunities and collaborations."
-              /> */}
+                        <AnimatedBody
+                            delay={0.2}
+                            text="I'm resourceful when problems get tricky, innovative when solutions need fresh thinking, and always learning because technology never stops moving. Right now, I'm looking to join a team where I can contribute meaningfully while growing alongside other driven developers."
+                        />
+
+                        <AnimatedBody
+                            delay={0.3}
+                            text="If you're working on something interesting, let's talk."
+                        />
                     </div>
                 </div>
             </div>

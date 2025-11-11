@@ -1,10 +1,10 @@
-import { ProjectProps } from "./projectDetails";
+import { ProjectProps } from "./projectDetails.ts";
 import Link from "next/link";
 import Image from "next/image";
-import AnimatedTitle from "../../animations/AnimatedTitle";
-import AnimatedBody from "../../animations/AnimatedBody";
+import AnimatedTitle from "../../animations/AnimatedTitle.tsx";
+import AnimatedBody from "../../animations/AnimatedBody.tsx";
 import { motion } from "framer-motion";
-import Container from "../container/Container";
+import Container from "../container/Container.tsx";
 import React from "react";
 import {SiGithub} from "react-icons/si";
 import {BsLink45Deg} from "react-icons/bs";
@@ -100,7 +100,7 @@ const ProjectCard = ({
                     <AnimatedBody
                         text={description}
                         className={
-                            "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D] "
+                            "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-gray-300 "
                         }
                     />
                     <div className="mt-9 mb-9 grid grid-cols-5 gap-5 col-start-1 col-end-2">
