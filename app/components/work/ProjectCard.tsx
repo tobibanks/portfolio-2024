@@ -8,7 +8,7 @@ import Container from "../container/Container";
 import React, { ComponentType } from "react";
 import {SiGithub} from "react-icons/si";
 import {BsLink45Deg} from "react-icons/bs";
-import { IconType } from "react-icons/lib";
+import { IconType } from "react-icons";
 
 const ProjectCard = ({
     id,
@@ -21,6 +21,8 @@ const ProjectCard = ({
     image,
     available,
 }: ProjectProps) => {
+    const GithubIcon = SiGithub as IconType;
+    const LinkIcon = BsLink45Deg as IconType;
     return (
         <motion.div
             className={`relative bg-cover bg-no-repeat bg-center z-10 h-[550px] w-full items-stretch justify-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
@@ -65,7 +67,7 @@ const ProjectCard = ({
                                 data-blobity-offset-x="4"
                                 data-blobity-offset-y="4"
                                 data-blobity-magnetic="false">
-                                <SiGithub/>
+                                <GithubIcon/>
                             </Link>
                             <Link
                                 href={demo}
@@ -77,7 +79,7 @@ const ProjectCard = ({
                                 data-blobity-offset-x="4"
                                 data-blobity-offset-y="4"
                                 data-blobity-magnetic="false">
-                                <BsLink45Deg/>
+                                <LinkIcon/>
                             </Link>
                         </>
                     ) : (
